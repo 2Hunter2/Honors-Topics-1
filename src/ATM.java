@@ -19,7 +19,7 @@ public class ATM {
 		}
 		else
 		{
-			if (amount <= map.get(bankAccountID))
+			if (amount <= map.get(bankAccountID) && amount > 0)
 			{
 				map.put(bankAccountID, map.get(bankAccountID)-amount);
 			}
